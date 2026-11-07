@@ -1,0 +1,14 @@
+{
+  "name": "冷蔵庫コンシェルジュ",
+  "short_name": "冷蔵庫",
+  "description": "あなたの食生活を支えます",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f3ee",
+  "theme_color": "#2f6f62",
+  "lang": "ja",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>冷蔵庫コンシェルジュ</title>
+  <meta name="theme-color" content="#2f6f62">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">🧊</span>
+      <div>
+        <h1>冷蔵庫コンシェルジュ</h1>
+        <p class="tagline">あなたの食生活を支えます</p>
+      </div>
+    </div>
+    <button class="icon-btn" data-action="tab" data-tab="settings" aria-label="設定">⚙️</button>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <nav class="tabbar" id="tabbar">
+    <button data-action="tab" data-tab="fridge"><span>🧊</span>冷蔵庫</button>
+    <button data-action="tab" data-tab="pantry"><span>🧂</span>常温</button>
+    <button data-action="tab" data-tab="register"><span>➕</span>登録</button>
+    <button data-action="tab" data-tab="recipe"><span>🍳</span>レシピ</button>
+    <button data-action="tab" data-tab="history"><span>⭐</span>記録</button>
+    <button data-action="tab" data-tab="extra"><span>🎁</span>おまけ</button>
+  </nav>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
